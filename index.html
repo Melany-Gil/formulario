@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__titulo">Validaciones JS</h1>
+  </header>
+  <main>
+    <article class="article__descripcion">
+      <p class="article__descripcion__parrafo">Los campos se validarán de la siguiente manera</p>
+      <ul class="article__descripcion__ul">
+        <li class="article__descripcion__li">
+          <b>Ficha:</b> se puede ingresar cualquier caracter.
+        </li>
+        <li class="article__descripcion__li">
+          <b>Nombre:</b> solo se puede ingresar letras.
+        </li>
+        <li class="article__descripcion__li">
+          <b>Apellidos:</b> solo se puede ingresar letras.
+        </li>
+        <li class="article__descripcion__li">
+          <b>Correo:</b> solo se puede ingresar un correo válido.
+        </li>
+        <li class="article__descripcion__li">
+          <b>Teléfono:</b> solo se puede ingresar números.
+        </li>
+        <li class="article__descripcion__li">
+          <b>Género:</b> solo se puede seleccionar un género.
+        </li>
+        <li class="article__descripcion__li">
+          <b>Ciudad:</b> solo se puede seleccionar una ciudad.
+        </li>
+        <li class="article__descripcion__li">
+          <b>Habilidades:</b> se tiene que seleccionar como mínimo 3 habilidades.
+        </li>
+      </ul>
+    </article>
+
+    <article class="article__formulario">
+      <form action="#" method="get" class="article__formulario__form">
+        <div class="article__formulario_div">
+          <label for="numero_ficha" class="article__formulario__label">Número de ficha</label>
+          <input type="number" minlength="7" maxlength="8" name="numero_ficha" id="numero_ficha"
+            class="article__formulario__input__number" autocomplete="off" required>
+        </div>
+
+        <div class="article__formulario_div">
+          <label for="nombre" class="article__formulario__label">Nombre</label>
+          <input type="text" name="nombre" id="nombre" class="article__formulario__input__text" autocomplete="off" pattern="[a-zA-Z]+"
+            required>
+        </div>
+
+        <div class="article__formulario_div">
+          <label for="apellidos" class="article__formulario__label">Apellidos</label>
+          <input type="text" name="apellidos" id="apellidos" class="article__formulario__input__text"
+            pattern="[a-zA-Z]+" autocomplete="off" required>
+        </div>
+
+        <div class="article__formulario_div">
+          <label for="correo" class="article__formulario__label">Correo</label>
+          <input type="email" name="correo" id="correo" class="article__formulario__input__email" autocomplete="off" required>
+        </div>
+
+        <div class="article__formulario_div">
+          <label for="telefono" class="article__formulario__label">Teléfono</label>
+          <input type="tel" maxlength="10" name="telefono" id="telefono" class="article__formulario__input__tel"
+            pattern="[0-9]+" autocomplete="off" required>
+        </div>
+
+        <div class="article__formulario_div">
+          <input type="radio" name="genero" value="hombre" id="hombre" class="article__formulario__input__radio"
+            required>
+          <label for="hombre" class="article__formulario__label">Hombre</label>
+
+          <input type="radio" name="genero" value="mujer" id="mujer" class="article__formulario__input__radio">
+          <label for="mujer" class="article__formulario__label">Mujer</label>
+
+          <input type="radio" name="genero" value="otro" id="otro" class="article__formulario__input__radio">
+          <label for="otro" class="article__formulario__label">Otro</label>
+        </div>
+
+        <div class="article__formulario_div">
+          <label for="ciudad" class="article__formulario__label">Ciudad</label><br>
+          <select name="ciudad" id="ciudad" class="article__formulario__select" autofocus required>
+            <option value="">Elige una opción</option>
+            <option value="medellin" class="article__formulario__select__option">Medellín</option>
+            <option value="bucaramanga" class="article__formulario__select__option">Bucaramanga</option>
+            <option value="bogota" class="article__formulario__select__option">Bogotá</option>
+            <option value="barranquilla" class="article__formulario__select__option">Barranquilla</option>
+          </select>
+        </div>
+
+        <div class="article__formulario_div">
+          <p class="article__formulario_parrafo">Seleccione mínimo 3 habilidades</p>
+
+          <input type="checkbox" name="html" id="html" class="article__formulario__input__checkbox">
+          <label for="html" class="article__formulario__label">HTML</label><br>
+
+          <input type="checkbox" name="css" id="css" class="article__formulario__input__checkbox">
+          <label for="css" class="article__formulario__label">CSS</label><br>
+
+          <input type="checkbox" name="javascript" id="javascript" class="article__formulario__input__checkbox">
+          <label for="javascript" class="article__formulario__label">Javascript</label><br>
+
+          <input type="checkbox" name="php" id="php" class="article__formulario__input__checkbox">
+          <label for="php" class="article__formulario__label">PHP</label><br>
+
+          <input type="checkbox" name="java" id="java" class="article__formulario__input__checkbox">
+          <label for="java" class="article__formulario__label">JAVA</label><br>
+
+          <input type="checkbox" name="sql" id="sql" class="article__formulario__input__checkbox">
+          <label for="sql" class="article__formulario__label">SQL</label><br>
+
+          <input type="checkbox" name="uml" id="uml" class="article__formulario__input__checkbox">
+          <label for="uml" class="article__formulario__label">UML</label><br>
+        </div>
+
+        <div class="article__formulario_div">
+          <button type="submit" class="article__formulario__button">Enviar</button>
+        </div>
+      </form>
+    </article>
+  </main>
+</body>
+
+</html>
