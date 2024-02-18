@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #0001;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.card__titulo {
+  margin-bottom: 20px;
+}
+
+.card__formulario__div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__formulario__label {
+  margin-bottom: 5px;
+}
+
+.card__formulario__input__number,
+.card__formulario__input__text,
+.card__formulario__input__email,
+.card__formulario__input__tel {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card__formulario__button {
+  padding: 10px;
+  width: 100px;
+  background-color: #2c2c2c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+
+.card__formulario__input__number:valid,
+.card__formulario__input__text:valid,
+.card__formulario__input__email:valid,
+.card__formulario__input__tel:valid,
+.card__formulario__select:valid {
+  border-color: green;
+}
+
+.card__formulario__input__number:invalid,
+.card__formulario__input__text:invalid,
+.card__formulario__input__email:invalid,
+.card__formulario__input__tel:invalid,
+.card__formulario__select:invalid {
+  border-color:rgb(230, 79, 79);
+}
