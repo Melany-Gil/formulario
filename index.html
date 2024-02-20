@@ -49,8 +49,8 @@
       <form action="#" method="get" class="card__formulario__form">
         <div class="card__formulario__div">
           <label for="numero_ficha" class="card__formulario__label">Número de ficha</label>
-          <input type="number" minlength="7" maxlength="8" name="numero_ficha" id="numero_ficha"
-            class="card__formulario__input__number" autocomplete="off" required>
+          <input type="number" name="numero_ficha" id="ficha" class="card__formulario__input__number" autocomplete="off"
+            required>
         </div>
 
         <div class="card__formulario__div">
@@ -61,8 +61,8 @@
 
         <div class="card__formulario__div">
           <label for="apellidos" class="card__formulario__label">Apellidos</label>
-          <input type="text" name="apellidos" id="apellidos" class="card__formulario__input__text"
-            pattern="[a-zA-Z]+" autocomplete="off" required>
+          <input type="text" name="apellidos" id="apellidos" class="card__formulario__input__text" pattern="[a-zA-Z]+"
+            autocomplete="off" required>
         </div>
 
         <div class="card__formulario__div">
@@ -78,8 +78,7 @@
         </div>
 
         <div class="card__formulario__div card__formulario__div--row">
-          <input type="radio" name="genero" value="hombre" id="hombre" class="card__formulario__input__radio"
-            required>
+          <input type="radio" name="genero" value="hombre" id="hombre" class="card__formulario__input__radio" required>
           <label for="hombre" class="card__formulario__label">Hombre</label>
 
           <input type="radio" name="genero" value="mujer" id="mujer" class="card__formulario__input__radio">
@@ -131,6 +130,7 @@
       </form>
     </article>
   </main>
+  <script src="main.js"></script>
 </body>
 
 </html>
