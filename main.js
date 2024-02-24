@@ -47,9 +47,8 @@ const validar = function () {
 
   let campo = ficha.value
   let soloLetras = /^[a-zA-Z]{3}$/
-  let letrasYGuionBajo = /^[a-zA-Z]{3}\_/
-  let regex = /^[a-zA-Z]{3}\_[0-9]{7}/
-  // let exp = /^cod\_[0 - 9]+/
+  let letrasYGuionBajo = /^[a-zA-Z]{3}\_$/
+  let regex = /^[a-zA-Z]{3}\_[0-9]{7}$/
 
   if (!regex.test(campo)) {
     ficha.style.borderColor = "red"
@@ -58,6 +57,7 @@ const validar = function () {
     ficha.style.borderColor = "green"
   }
 
+  console.log(regex.test(campo))
 }
 
 ficha.addEventListener('blur', () => {
