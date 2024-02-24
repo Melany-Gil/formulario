@@ -63,3 +63,11 @@ const validar = function () {
 ficha.addEventListener('blur', () => {
   validar()
 });
+
+// validando con operador ternario
+
+let regex = /^[a-zA-Z]{3}\_[0-9]{7}$/
+
+operadorTernario = ficha.value == regex ? "Válido" : "No válido";
+
+console.log(operadorTernario);
