@@ -49,19 +49,3 @@
   border: none;
   border-radius: 10px;
 }
-
-.card__formulario__input__number:valid,
-.card__formulario__input__text:valid,
-.card__formulario__input__email:valid,
-.card__formulario__input__tel:valid,
-.card__formulario__select:valid {
-  border-color: green;
-}
-
-.card__formulario__input__number:invalid,
-.card__formulario__input__text:invalid,
-.card__formulario__input__email:invalid,
-.card__formulario__input__tel:invalid,
-.card__formulario__select:invalid {
-  border-color:rgb(230, 79, 79);
-}
